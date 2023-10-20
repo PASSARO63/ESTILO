@@ -1,0 +1,706 @@
+/*Link da fonte da letra*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*Aqui contem a fonte da letra e outras formatações da pagina*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Colocamos uma cor de fundo no site*/
+.landing-page-principal{
+    background-color: rgb(88, 88, 88);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Aqui começa a parte do (Grid) das paginas*/
+
+/*Colocamos o grid na loja principal */
+.principal {
+    display: grid;
+    grid-template-areas:
+        "cabe cabe cabe"
+        "corp corp corp"
+        "fund fund fund";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2rem;
+}
+
+.principal-exercicio{
+    display: grid;
+    grid-template-areas:
+        "cabe cabe cabe"
+        "lado corpo corpo"
+        "fund fund fund";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px auto auto;
+    grid-gap: 2rem;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Aqui começa o Header*/
+
+.header-principal {
+    grid-area: cabe;
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: rgb(88, 88, 88);
+}
+
+#chk1 {
+    display: none;
+}
+
+i {
+    color: #fff;
+    cursor: pointer;
+}
+
+header .logo {
+    flex: 1;
+    color: #fff;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.header-principal ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.header-principal ul li {
+    list-style: none;
+}
+
+.header-principal ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding-block: 5px;
+    transition: all 1s ease;
+    padding: 10px 15px;
+}
+
+.header-principal ul li a:hover {
+    color: #fff;
+}
+
+.header-principal ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    border-radius: 200px;
+    background: #fff;
+    transition: all 1s ease;
+}
+
+.header-principal ul li a:hover::after {
+    width: 80%;
+}
+
+header .menu {
+    font-size: 2.5em;
+    display: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Aqui começa a parte do (MAIN)*/
+
+/*Usamos o nome corpo para chamar o grid no main*/
+.corpo {
+    grid-area: corp;
+}
+
+/*Modifica a (fonte) da letra / (alinhamento) do titulo*/
+.primeiro-titulo {
+    margin-top: -35px;
+    text-align: center;
+    overflow: hidden;
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
+    color: black;
+}
+
+/*Coloquei um (background) / (content) que sao os riscos / (display) para ficar na mesma linha que a palavra / (tamanho) do risco / (position) a posição / (vertical) para dizer que ficar no meio / (porcentagem) da linha da distancia */
+.primeiro-titulo:before,
+.primeiro-titulo:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+
+/*Adicionei a (porcentagem) de risco do lado esquerdo e a (distancia) da palvra no caso right 0,5*/
+.primeiro-titulo:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+/*Adicionei a (porcentagem) de risco do lado direito e a (distancia) da palavra no caso right 0,5*/
+.primeiro-titulo:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+main h1 {
+    color: rgb(48, 47, 47);
+    text-align: center;
+}
+
+#colocar_nome{
+    text-align: center;
+    margin-top: -45px;
+}
+
+.informacoes_gerais {
+    padding: 20px;
+    margin: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.exemplos p {
+    margin: 10px;
+    color: rgb(48, 47, 47);
+    font-size: 17px;
+}
+
+.paragrafo-1 {
+    text-align: center;
+}
+
+.informacoes-gerais {
+    padding: 20px;
+    margin: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.segundo-titulo {
+    margin: 15px;
+    color: black;
+    text-align: center;
+
+}
+
+.exemplos p {
+    margin: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.lista-1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.imagem-equaçao {
+    text-align: center;
+}
+
+.pai-conteudo{
+    text-align: center;
+}
+
+#marcacao_nome{
+    animation: animacao 2s infinite;
+}
+
+@keyframes animacao{
+    0% {
+        font-size: 80px;
+      }
+      50% {
+        font-size: 85px;
+      }
+      100% {
+        font-size: 80px;
+      }    
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Aqui começa a parte do (ASIDE-EXERCICIO)*/
+
+.aside-exercicio{
+    grid-area: lado;
+    
+    width: 700px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Aqui começa a parte do (MAIN-EXERCICIO)*/
+
+.main-exercicios{
+    grid-area: corpo;
+    width: 600px;
+}
+
+.exercicios-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    position: relative;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: 1px solid ;
+    padding-top: 20px;
+}
+
+.verde{
+   background-color: green;
+   color: #fff;
+}
+
+.vermelho{
+   background-color: red;
+   color: #fff;
+}
+
+.button-exercicio{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 5px 50px;
+    border: 3px solid black;
+    position: relative;
+    
+}
+
+.button-exercicio::before,
+.button-exercicio::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s;
+}
+
+.button-exercicio::before{
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.button-exercicio::after{
+    bottom:-15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.button-exercicio:hover::before,
+.button-exercicio:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+.acertos{
+    animation: animacao 2s infinite;
+    background-color: rgb(88, 88, 88);
+    color: #fff;
+}
+
+@keyframes animacao{
+    0% {
+        font-size: 15px;
+      }
+      50% {
+        font-size: 18px;
+      }
+      100% {
+        font-size: 15px;
+      }    
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Aqui começa a parte do (FOOTER)*/
+
+footer {
+    grid-area: fund;
+    background-color: rgb(88, 88, 88);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 40px 100px 50px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+.redes-sociais {
+    margin-bottom: 20px;
+}
+
+.redes-sociais i {
+    font-size: 28px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 17px;
+}
+
+.creditos {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.line {
+    background-color: white;
+    width: 20px;
+    height: 6px;
+    margin-top: 1px;
+    border-radius: 40px;
+    position: relative;
+    animation: underline-animation 3s linear infinite;
+}
+
+@keyframes underline-animation {
+    0% {
+        left: -160px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 160px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Aqui começa a parte do (LANDING-PAGE)*/
+
+/*Colocamos uma distancia da borda e uma altura definida da pagina*/
+.container {
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+/*Colocamos os item alinhados com uma distancia da borda*/
+#header-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*Colocamos o item sem aparecer no site e com uma cor de fundo transparente*/
+header .menu-icon {
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+/*Colocamos uma altura e largura definida para a logo*/
+.logo img {
+    width: 220px;
+    height: 220px;
+}
+
+#main-page .esquerda h1{
+    color: #fff;
+}
+
+/*Colocamos uma posição relativa*/
+nav {
+    position: relative;
+}
+
+/*Tiramos a bolinha que fica nas listas*/
+nav .menu-list {
+    list-style: none;
+}
+
+/*Colocamos uma distancia dele em relação ao topo com uma posição absoluta e deixamos o item sem aparecer no site apenas quando diminuir*/
+nav .menu-list .close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}
+
+/*Colocamos para reposicionar o elemento na direção horizontal */
+nav.active .menu-list {
+    transform: translateX(0);
+}
+
+/*Colocamos um tamanho de letra definido junto com uma distancia da borda e um alinhamento das bases dos elementos*/
+nav .menu-list li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/*colocamos uma cor nas palavras junto com uma transição*/
+nav .menu-list a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+/*Colocamos as letras mais distantes das outras*/
+nav .menu-list a:hover {
+    letter-spacing: 1px;
+}
+
+/*Colocamos uma distancia entre os elementos e um espaçamento*/
+#main-page {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Colocamos uma cor nas palavras com uma distancia da borda e uma largura de 50%*/
+#main-page .esquerda {
+    color: white;
+    width: 50%;
+    padding: 20px;
+}
+
+/*Colocamos um tramanho de letra definido jundo com uma distancia entre as letras*/
+main .esquerda h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+/*Colocamos um tamanho de letra definido junto com uma distancia entre os elementos*/
+#main-page .esquerda p {
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+/*Colocamos uma distancia da borda e dos elementos com um tamanho de letra definifo e colocamos a cor da palavra mais fraca*/
+#main-page .esquerda .main_left-btn button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 20px 35px rgb(0, 0, 0, 10%), 0 15px 12px rgb(0, 0, 0, 8%);
+    background: rgb(187, 186, 186);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+
+/*Colocamos uma cor de fundo e uma cor nas palavras com uma distancia entre as letras*/
+#main-page .esquerda .main_left-btn button:hover {
+    background-color: rgb(255, 254, 255);
+    color: black;
+    letter-spacing: 1px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Media scren*/
+
+/*Media scren (1330 pixels)*/
+
+
+@media only screen and (max-width: 1330px) {
+
+    .principal {
+        grid-template-areas:
+            "cabe cabe cabe"
+            "corp corp corp"
+            "fund fund fund";
+        grid-template-columns: 3fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    /*Retirei o titulo da loja principal e posicionei*/
+    .primeiro-titulo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .primeiro-titulo:before,
+    .primeiro-titulo:after {
+        width: 5%;
+        /* Ajuste o tamanho do risco para 5% em telas menores */
+    }
+
+    .line1 {
+        display: none;
+    }
+
+    .header-principal ul {
+        position: fixed;
+        top: 102px;
+        margin-top: 0;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+
+    header .menu {
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+
+    #chk1:checked~ul {
+        right: 0;
+    }
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Media scren*/
+
+/*Media scren (820 pixels)*/
+
+
+@media only screen and (max-width: 820px) {
+
+    .principal {
+        grid-template-areas:
+            "cabe cabe cabe"
+            "corp corp corp"
+            "fund fund fund";
+        grid-template-columns: 3fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    /*Deixei centralizado o titulo da pagina*/
+    .primeiro-titulo {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: clamp(1em, 1em + 1vw, 1.5em);
+    }
+
+    .primeiro-titulo:before,
+    .primeiro-titulo:after {
+        display: none;
+    }
+
+
+    /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    /*Media scren (Landing-page) (820 pixels)*/
+
+
+    /*Colocomos o elemento como se fosse um bloco*/
+    nav .menu-list .close-icon,
+    header .menu-icon {
+        display: block;
+    }
+
+    /*Colocamos uma altura e largura definida com uma cor de fundo uma transição de 5 segundo junto com uma posição fixa */
+    nav .menu-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        background-color: rgb(88, 88, 88);
+    }
+
+    /*Colocamos um tamanho de letra definido*/
+    nav .menu-list li {
+        font-size: 30px;
+    }
+
+    /*Colocamos uma quebra de linha*/
+    .main-landing-page {
+        flex-wrap: wrap;
+    }
+
+    /*Colocamos uma distancia da borda e uma largura definida*/
+    .main-landing-page .esquerda {
+        width: 100%;
+        text-align: center;
+        padding: 50px;
+    }
+
+    /*Colocamos um tamanho de letra definida*/
+    .main-landing-page .esquerda h1 {
+        font-size: 3rem;
+    }
+
+    /*Colocamos uma distancia do elemento emrelação a outros elementos e uma largura definida*/
+    .main-landing-page .direita {
+        width: 100%;
+        margin: 50px 10px;
+    }
+
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Media scren*/
+
+/*Media scren (480 pixels)*/
+
+
+@media only screen and (max-width: 480px) {
+
+    .principal {
+        grid-template-areas:
+            "cabe cabe cabe"
+            "corp corp corp"
+            "fund fund fund";
+        grid-template-columns: 3fr;
+        grid-template-rows: auto auto auto;
+    }
+
+
+}

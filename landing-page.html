@@ -1,0 +1,94 @@
+<!--Identifica o HTML5-->
+<!DOCTYPE html>
+
+<!--colocamos nossa pagina em portugues Brasil-->
+<html lang="pt-br">
+
+<!--Head é a aba do browser-->
+
+<head>
+    <!--Nos permite usar caracteres especiais-->
+    <meta charset="UTF-8">
+    <!--Utiizada para configurar a pagina web, para que sempre esteja na sua versao mais recente-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--é usado para que o site web se enquadre proporcionalmente nas telas de celulares-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Identifica o CSS para que possamos usá-lo no nosso HTML-->
+    <link rel="stylesheet" href="style.css">
+    <!--identifica as imagens em codigo-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--Identifica os icons atráves de codigo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Imagem do brasão pequenininho na aba-->
+    <link rel="shortcut icon" href="imagens/logo.png">
+    <!--Nome da aba do browser-->
+    <title>FORMULARTE</title>
+</head>
+<body class="landing-page-principal">
+     <!--Aqui vai ficar todas as informações do lading page-->
+    <div class="container">
+        <!--Aqui e o Header-->
+        <header id="header-page">
+            <!--Aqui vai ficar a logo do site-->
+            <div class="logo">
+                <a href="#"><img src="imagens/logo.png"></a>
+            </div>
+            <!--Aqui fica os links das outras paginas-->
+            <nav>
+                <!--Aqui fica os links das outras paginas-->
+                <ul class="menu-list">
+                    <!--Aqui e o link das outras paginas-->
+                    <li><a href="pagina-principal.html">Pagina Pricipal</a></li>
+                    <!--Aqui e o link das outras paginas-->
+                    <li><a href="exercicios.html">Pagina de Exercicios</a></li>
+                    <!--Aqui e o link das outras paginas-->
+                    <li><a href="Formulario.html">Cadastro</a></li>
+                    <!--Aqui e o link das outras paginas-->
+                    <li><a href="#">Pagina de Contato</a></li>
+                    <!--Aqui fica a imagem do X para quando for diminuir a tele ele aparecer-->
+                    <img src="imagens/close-icon.png" class="close-icon">
+                </ul>
+            </nav>
+            <!--Aqui fica a imagem dos tres pontinhos-->
+            <button class="menu-icon"><img src="imagens/menu-icon.png"></button>
+        </header>
+        <!--Aqui acabou o header-->
+
+        <!--Aqui começa o Main-->
+        <main id="main-page">
+            <!--Aqui vai ter as informações da parte esquerda do site-->
+            <section class="esquerda">
+                <!--Aqui tem o título-->
+                <h1><b>Matemática</b> & Formulas</h1>
+                <!--Aqui tem um resumo sobre o site-->
+                <p>Bem-vindo ao nosso site de matemática, onde tornamos o aprendizado divertido e acessível para todos.
+                    Descubra o fascinante mundo dos números e explore conceitos matemáticos de maneira prática e
+                    envolvente. Vamos começar essa jornada juntos!</p>
+                    <!--Aqui tem os botões-->
+                <div class="main_left-btn">
+                    <!--Aqui e um botão-->
+                    <a href="principal.html"><button>Começar</button></a>
+                    <!--Aqui e um botão-->
+                    <button>Saiba Mais</button>
+                </div>
+            </section>
+            <!--Fim da parte esquerda do site-->
+
+            <!--Aqui vai ter as informações da parte esquerda do site-->
+            <section class="direita">
+                <!--Aqui fica a imagem da parte direita do site-->
+                <img src="imagens/cerebro.png" width="100%">
+            </section>
+            <!--Aqui acabou a parte direita do site-->
+
+        </main>
+        <!--Aqui acabou o Main-->
+    </div>
+    <!--Aqui fechou as informações do site-->
+
+    <!--Aqui tem o arquivo Javascript-->
+    <script src="script.js"></script>
+</body>
+</html>

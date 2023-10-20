@@ -1,0 +1,301 @@
+<!--Identifica o HTML5-->
+<!DOCTYPE html>
+
+<!--colocamos nossa pagina em portugues Brasil-->
+<html lang="pt-br">
+
+<!--Head é a aba do browser-->
+
+<head>
+    <!--Nos permite usar caracteres especiais-->
+    <meta charset="UTF-8">
+    <!--Utiizada para configurar a pagina web, para que sempre esteja na sua versao mais recente-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--é usado para que o site web se enquadre proporcionalmente nas telas de celulares-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Identifica o CSS para que possamos usá-lo no nosso HTML-->
+    <link rel="stylesheet" href="style.css">
+    <!--identifica as imagens em codigo-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--Identifica os icons atráves de codigo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Imagem do brasão pequenininho na aba-->
+    <link rel="shortcut icon" href="imagens/logo.png">
+    <!--Nome da aba do browser-->
+    <title>EQUAÇÃO 2* GRAU</title>
+</head>
+
+<body onload="inclui_nome()" class="principal">
+
+    <header class="header-principal">
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo"><h1>FORMULARTE</h1></div>
+            <ul>
+                <li><a href="landing-page.html">landing page</a></li>
+                <li><a href="exercicios.html">Exercicios</a></li>
+                <li><a href="Formulario.html">Cadastro</a></li>
+                <li><a href="#">Contato</a></li>
+            
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+    </header>
+
+    <main class="corpo">
+
+        <h1 id="marcacao_nome"></h1> <br> <br> <br>
+
+        <h2 class="primeiro-titulo">Conheça um pouco sobre Equação do 2 Grau</h2>
+
+        <div class="informacoes-gerais">
+
+            <p class="paragrafo-1">A equação do 2º grau é caracterizada por possuir uma incógnita de grau 2. Para
+                resolver esse tipo de equação, é importante conhecer a fórmula de Bhaskara.</p> <br>
+
+            <p class="paragrafo-1">A equação do 2º grau é caracterizada por um <span
+                    style="color: red;">polinômio</span> degrau 2, ouseja, um polinômio do tipo ax2+bx+c, em que a, b e
+                c são <span style="color: red;">números reais</span>.
+                Ao resolvermos uma equação de grau 2, estamos interessados em encontrar valores para a incógnita x que
+                torne o valor da expressão igual a 0, que são chamadas de raízes, isto é, ax2 + bx +c = 0.</p> <br>
+
+            <h2 class="segundo-titulo">Tipos de Equação do 2 Grau</h2>
+
+            <p class="paragrafo-1">A equação de 2º grau pode ser <strong>representada por ax²+bx+c=0</strong>, em que
+                oscoeficientes a, b e
+                c são números reais, com a ≠ 0.</p> <br>
+
+            <div class="exemplos">
+
+                <h2 class="segundo-titulo">-->Exemplos<-- </h2> <br>
+
+                        <p class="paragrafo-1">a) 2x2 +4x – 6 = 0 → a = 2; b =4 e c = – 6</p> <br>
+                        <p class="paragrafo-1">b) x2 – 5x + 2 = 0 → a =1; b= – 5 e c = 2</p> <br>
+                        <p class="paragrafo-1">c) 0,5x2 + x –1 = 0 → a = 0,5; b = 1 e c = –1</p> <br>
+
+            </div>
+
+            <p class="paragrafo-1">A equação do 2º grau é classificada como <span style="color: red;">completa</span>
+                quando todos os coeficientes são
+                diferentes de 0, ou
+                seja, a ≠ 0, b ≠ 0 e c ≠ 0.</p> <br>
+
+            <p class="paragrafo-1">A equação do 2º grau é classificada como <span style="color: red;">incompleta</span>
+                quando o valor dos coeficientes b
+                ou c são iguais a
+                0, isto é, b = 0 ou c = 0.</p> <br>
+
+            <div class="exemplos">
+
+                <h2 class="segundo-titulo">-->Exemplos<-- </h2> <br>
+
+                        <p class="paragrafo-1">a) 2x2 – 4 = 0 → a = 2; b = 0 e c= – 4</p> <br>
+                        <p class="paragrafo-1">b) -x2 + 3x = 0 → a = – 1; b = 3 e c = 0</p> <br>
+                        <p class="paragrafo-1">c) x2 = 0 → a = 1; b =0 e c =0</p> <br>
+
+            </div>
+
+            <p class="paragrafo-1"> <span style="color: red;">Atenção:</span> o valor do coeficiente a nunca é igual a
+                0, caso isso ocorra, a equação deixa de ser do 2º grau.</p> <br>
+
+            <h1 class="primeiro-titulo">Como resolver equações de 2º grau ?</h1> <br>
+
+            <p class="paragrafo-1">A solução de uma equação do 2º grau ocorre, quando as raízes são encontradas, ou
+                seja, os valores atribuídos a x . Esses valores de x devem tornar a igualdade verdadeira, isto é, ao
+                substituir o valor de x na expressão, o resultado deve ser igual a 0.</p> <br>
+
+            <h2 class="segundo-titulo">-->Exemplos<-- </h2> <br>
+
+            <p class="paragrafo-1">Considerando a equação x2 – 1 = 0 temos que x’ = 1 e x’’ = – 1 são soluções
+                da
+                equação, pois substituindo esses valores na expressão, temos uma igualdade verdadeira. Veja:</p>
+            <br>        
+
+            <p class="paragrafo-1">x2 – 1 = 0</p> <br>
+
+            <p class="paragrafo-1">(1)2 – 1 = 0 e (–1)2 – 1 = 0</p> <br>
+
+            <p class="paragrafo-1">Para encontrar a solução de uma <span style="color: red;">equação</span>, é
+                preciso analisar se a equação é
+                completa e incompleta e selecionar qual método será utilizado.
+            </p> <br>
+
+            <ul class="lista-1">
+
+                <lu> <strong>Método de solução para equações do tipo ax²+ c = 0</strong> </lu>
+
+            </ul> <br>
+
+            <p class="paragrafo-1"> O método para determinar a solução de equações incompletas que possuem b=0
+                consiste em isolar a incógnita x, assim:
+            </p> <br>
+
+            <div class="imagem-equaçao"> <img src="imagens/equacao-solucao-equacao-incompleta1.webp" alt=""> </div> <br>
+
+            <h2 class="segundo-titulo">-->Exemplo<-- </h2> <br>
+
+            <p class="paragrafo-1">Encontre as raízes da equação 3x2 – 27 = 0.</p> <br>
+
+            <div class="imagem-equaçao"> <img src="imagens/equacao-exemplo-solucao-incompleta1.webp" alt=""> </div> <br>
+
+            <ul class="lista-1">
+                <lu> <strong>Método de solução para equações do tipo ax2 + bx = 0</strong> </lu>
+            </ul> <br>
+
+            <p class="paragrafo-1"> O método para determinar as possíveis soluções de uma equação com c
+                =0, consiste em utilizar a <span style="color: red;">fatoração por evidência.</span>Veja:
+            </p> <br>
+
+            <p class="paragrafo-1">ax2 + bx = 0</p> <br>
+
+            <p class="paragrafo-1">x·(ax + b) = 0</p> <br>
+
+            <p class="paragrafo-1">Ao observar a última igualdade, é notável que há uma multiplicação e
+             que para o resultado ser 0, é necessário que, pelo menos, um dos fatores seja igual a 0.
+            </p> <br>
+
+            <p class="paragrafo-1">x·(ax + b) = 0</p> <br>
+
+            <p class="paragrafo-1">x = 0 ou ax + b = 0</p> <br>
+
+            <p class="paragrafo-1">Assim, a solução da equação é dada por:</p> <br>
+
+            <div class="imagem-equaçao"> <img src="imagens/equacao-solucao-incompleta2.webp" alt=""></div> <br>
+
+            <h2 class="segundo-titulo">-->Exemplo<-- </h2> <br>
+
+            <p class="paragrafo-1">Determine a solução da equação 5x2 – 45x = 0</p> <br>
+
+            <div class="imagem-equaçao"> <img
+            src="imagens/exemplo-solucao-equacao-incompleta45.webp" alt=""></div> <br>
+
+            <h2 class="segundo-titulo">Método de solução para equações completas</h2> <br>
+
+            <p class="paragrafo-1">O método conhecido como método de Bhaskara ou <span
+            style="color: red;">fórmula de Bhaskara</span> aponta que as raízes de uma
+            equação do 2º grau do tipo ax2 + bx + c = 0 é dada pela seguinte relação:
+            </p><br>
+
+            <div class="imagem-equaçao"> <img src="imagens/formula-de-bhaskara.webp" alt=""></div> <br>
+
+            <h2 class="segundo-titulo">-->Exemplo<-- </h2> <br>
+
+            <p class="paragrafo-1">Determine a solução da equação x2 – x – 12 = 0.</p><br>
+
+            <p class="paragrafo-1">Note que os coeficientes da equação são: a = 1; b= –
+             1 e c = – 12. Substituindo esses valores na fórmula de Bhaskara, temos:</p> <br>
+
+            <div class="imagem-equaçao"> <img src="imagens/exemplo-solucao.webp" alt=""></div> <br>
+
+            <p class="paragrafo-1">O delta (Δ) recebe o nome de discriminante e note que
+                ele está dentro de uma <span style="color: red;">raiz quadrada</span> e,
+                conforme sabemos, levando em conta os números reais, não é possível
+                extrair raiz quadrada de um número negativo.</p> <br>
+
+            <p class="paragrafo-1">Conhecendo o valor do discriminante, podemos realizar
+                algumas afirmações a respeito da solução da equação do 2º grau:</p> <br>
+
+            <p class="segundo-titulo"> <strong> → discriminante positivo </strong> (Δ >
+                0): duas soluções para a equação;</p> <br>
+
+            <p class="segundo-titulo"> <strong> → discriminante igual a zero </strong>
+                (Δ = 0): as soluções da equação são repetidas;</p> <br>
+
+            <p class="segundo-titulo"> <strong> → discriminante negativo</strong> (Δ <
+                    0): não admite solução real.</p> <br>
+
+            <h1 class="primeiro-titulo">Sistemas de equações do segundo grau</h1> <br>
+
+            <p class="paragrafo-1">Quando consideramos simultaneamente duas ou
+            mais equações, temos um sistema de equações. A solução de um
+            sistema de 2 variáveis é o conjunto de pares ordenados que
+            satisfaz simultaneamente todas as equações envolvidas.
+            </p> <br>
+
+            <h2 class="segundo-titulo">-->Exemplo<-- </h2> <br>
+
+            <p class="paragrafo-1">Considere o sistema:</p> <br>
+
+            <div class="imagem-equaçao"> <img src="imagens/equacao-solucao-sistema-equacoes (1).webp" alt=""></div> <br>
+
+            <p class="paragrafo-1">Com os valores: x’ = 2, x’’ = – 2 e
+            y’ = 2, y’’ = – 2 podemos montar pares ordenados que
+            satisfazem as equações do sistema simultaneamente. Veja:
+             (2, 2), (2, – 2), (– 2, 2), (– 2, – 2).
+            </p> <br>
+
+            <p class="paragrafo-1">Lembre-se de que um par ordenado éescrito da forma (x, y).</p> <br>
+
+            <p class="paragrafo-1"> Os métodos para encontrar a solução
+            de um sistema de equações são semelhantes ao de sistemaslineares.
+            </p> <br>
+
+            <h2 class="segundo-titulo">-->Exemplo<-- </h2> <br>
+
+            <p class="paragrafo-1">Considere o sistema:</p> <br>
+
+            <div class="imagem-equaçao"> <img src="imagens/equacao-sistema-exemplo1.webp"alt=""></div> <br>
+
+            <p class="paragrafo-1">Da equação x – y = 0, vamos isolar a incógnita x, assim:</p> <br>
+
+            <p class="paragrafo-1">x – y = 0</p> <br>
+
+            <p class="paragrafo-1"> x = y</p> <br>
+
+            <p class="paragrafo-1">Agora devemos substituir o valor isolado na outra equação, assim:</p> <br>
+
+            <p class="paragrafo-1">x2 – x –12 = 0</p> <br>
+
+            <p class="paragrafo-1">y2 – y –12 = 0</p> <br>
+
+            <p class="paragrafo-1">Utilizando método de Bhaskara, temos que:</p> <br>
+
+            <div class="imagem-equaçao"> <img src="imagens/equacao-sistema-solucao 24.webp"alt=""></div> <br>
+
+            <p class="paragrafo-1">Como x = y, teremos que x’ = y’ e x’’ = y’’. Ou seja:</p> <br>
+
+            <p class="paragrafo-1">x’ = 4</p> <br>
+
+            <p class="paragrafo-1">x’’ = -3</p> <br>
+
+            <p class="paragrafo-1">Assim, os pares ordenados são soluções do sistema (4, 4) e (– 3,– 3).</p> <br>
+
+       </div> <br>
+
+        <div class="pai-conteudo">
+            <a href="exercicios.html" class="button-exercicio">--> Exercícios de revisão --></a> <br> <br> <br>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="redes-sociais">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <ul class="link">
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">História</a></li>
+        </ul>
+        <div class="line"></div>
+        <p class="creditos">&#169
+            2023 Todos os direitos reservados</p>
+    </footer>
+    
+    <!--Aqui tem o arquivo Javascript-->
+    <script src="script.js"></script>
+</body>
+</html>

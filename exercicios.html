@@ -1,0 +1,312 @@
+<!--Identifica o HTML5-->
+<!DOCTYPE html>
+
+<!--colocamos nossa pagina em portugues Brasil-->
+<html lang="pt-br">
+
+<!--Head é a aba do browser-->
+
+<head>
+    <!--Nos permite usar caracteres especiais-->
+    <meta charset="UTF-8">
+    <!--Utiizada para configurar a pagina web, para que sempre esteja na sua versao mais recente-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--é usado para que o site web se enquadre proporcionalmente nas telas de celulares-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Identifica o CSS para que possamos usá-lo no nosso HTML-->
+    <link rel="stylesheet" href="style.css">
+    <!--identifica as imagens em codigo-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--Identifica os icons atráves de codigo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Imagem do brasão pequenininho na aba-->
+    <link rel="shortcut icon" href="imagens/logo.png">
+    <!--Nome da aba do browser-->
+    <title>EXERCÍCIOS</title>
+</head>
+
+<body class="principal-exercicio">
+
+    <header class="header-principal">
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo">
+            <h1>FORMULARTE</h1>
+        </div>
+        <ul>
+            <li><a href="landing-page.html">landing page</a></li>
+            <li><a href="pagina-principal.html">Conteúdo</a></li>
+            <li><a href="Formulario.html">Cadastro</a></li>
+            <li><a href="#">Contato</a></li>
+
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <aside class="aside-exercicio">
+
+        <h1 class="primeiro-titulo">Exercícios de revisão</h1> <br> <br>
+
+        <div class="exercicios-div">
+            <form>
+
+                <h3>1) Qual é o valor do discriminante (Δ) de uma equação de segundo grau do tipo ax² + bx + c = 0?</h3>
+                <br>
+
+                <input type="radio" name="quest_1" value="correta"> a) Δ = b² - 4ac<br>
+                <input type="radio" name="quest_1" value="errada"> b) Δ = 2ab - c²<br>
+                <input type="radio" name="quest_1" value="errada"> c) Δ = a² - 4bc<br>
+                <input type="radio" name="quest_1" value="errada"> d) Δ = b² - 2ac<br> <br>
+
+                <p id="resp_correta_1" class="verde"></p>
+                <p id="resp_errada_1" class="vermelho"></p><br>
+
+                <h3>2) Qual é a fórmula para encontrar as raízes de uma equação de segundo grau?</h3><br>
+
+                <input type="radio" name="quest_2" value="errada"> a) x = (-b ± √Δ) / (a - b)<br>
+                <input type="radio" name="quest_2" value="errada"> b) x = (-b ± √Δ) / (2c)<br>
+                <input type="radio" name="quest_2" value="errada"> c) x = (-b ± √Δ) / (a + c)<br>
+                <input type="radio" name="quest_2" value="correta"> d) x = (-b ± √Δ) / (2a)<br> <br>
+
+                <p id="resp_correta_2" class="verde"></p>
+                <p id="resp_errada_2" class="vermelho"></p><br> <br>
+
+                <h3>3) Se o discriminante (Δ) for igual a zero, quantas raízes reais a equação possui?</h3><br>
+
+                <input type="radio" name="quest_3" value="errada"> a) Infinitas raízes reais<br>
+                <input type="radio" name="quest_3" value="errada"> b) 0 raízes reais<br>
+                <input type="radio" name="quest_3" value="errada"> c) 2 raízes reais<br>
+                <input type="radio" name="quest_3" value="correta"> d) 1 raiz real<br> <br>
+
+                <p id="resp_correta_3" class="verde"></p>
+                <p id="resp_errada_3" class="vermelho"></p><br> <br>
+
+                <h3>4) Se o discriminante (Δ) for menor que zero, quantas raízes reais a equação possui ?</h3> <br>
+
+                <input type="radio" name="quest_4" value="errada">a) Infinitas raízes reais<br>
+                <input type="radio" name="quest_4" value="errada">b)1 raiz real<br>
+                <input type="radio" name="quest_4" value="correta">c) 0 raízes reais<br>
+                <input type="radio" name="quest_4" value="errada">d)raízes reais<br> <br>
+
+                <p id="resp_correta_4" class="verde"></p>
+                <p id="resp_errada_4" class="vermelho"></p><br> <br>
+
+                <h3>5) Se o discriminante (Δ) for maior que zero, quantas raízes reais a equação possui ?</h3> <br>
+
+                <input type="radio" name="quest_5" value="errada">a)0 raízes reais<br>
+                <input type="radio" name="quest_5" value="correta">b)2 raízes reais<br>
+                <input type="radio" name="quest_5" value="errada">c)Infinitas raízes reais<br>
+                <input type="radio" name="quest_5" value="errada">d)1 raiz real<br> <br>
+
+                <p id="resp_correta_5" class="verde"></p>
+                <p id="resp_errada_5" class="vermelho"></p><br> <br>
+
+                <h3>6) Qual é o termo responsável pela inclinação da curva de uma equação de segundo grau ?</h3> <br>
+
+                <input type="radio" name="quest_6" value="correta">a)Coeficiente a<br>
+                <input type="radio" name="quest_6" value="errada">b)Coeficiente b<br>
+                <input type="radio" name="quest_6" value="errada">c)Coeficiente c<br>
+                <input type="radio" name="quest_6" value="errada">d)Coeficiente d<br> <br>
+
+                <p id="resp_correta_6" class="verde"></p>
+                <p id="resp_errada_6" class="vermelho"></p><br> <br>
+
+                <h3>7) Se o coeficiente a for igual a zero, a equação ainda é considerada uma equação de segundo grau ?
+                </h3> <br>
+
+                <input type="radio" name="quest_7" value="errada">a)Não há coeficiente a<br>
+                <input type="radio" name="quest_7" value="errada">b)Talvez<br>
+                <input type="radio" name="quest_7" value="errada">c)Sim<br>
+                <input type="radio" name="quest_7" value="correta">d)Não<br> <br>
+
+                <p id="resp_correta_7" class="verde"></p>
+                <p id="resp_errada_7" class="vermelho"></p><br> <br>
+
+                <h3> 8) Qual é o número máximo de raízes reais que uma equação de segundo grau pode ter?</h3> <br>
+
+                <input type="radio" name="quest_8" value="errada">a)1 raiz real<br>
+                <input type="radio" name="quest_8" value="errada">b)Infinitas raízes reais<br>
+                <input type="radio" name="quest_8" value="correta">c)2 raízes reais<br>
+                <input type="radio" name="quest_8" value="errada">d)0 raízes reais<br> <br>
+
+                <p id="resp_correta_8" class="verde"></p>
+                <p id="resp_errada_8" class="vermelho"></p><br> <br>
+
+                <h3>9) Qual é o nome dado às raízes iguais em uma equação de segundo grau?</h3> <br>
+
+                <input type="radio" name="quest_9" value="errada">a)Raízes imaginárias<br>
+                <input type="radio" name="quest_9" value="correta">b)Raízes coincidentes ou raiz dupla<br>
+                <input type="radio" name="quest_9" value="errada">c)Raízes complexas<br>
+                <input type="radio" name="quest_9" value="errada">d)Raízes distintas<br> <br>
+
+                <p id="resp_correta_9" class="verde"></p>
+                <p id="resp_errada_9" class="vermelho"></p><br> <br>
+
+                <h3>10) Qual é o nome dado às raízes diferentes em uma equação de segundo grau?</h3> <br>
+
+                <input type="radio" name="quest_10" value="errada">a)Raízes coincidentes ou raiz dupla<br>
+                <input type="radio" name="quest_10" value="errada">b)Raízes imaginárias<br>
+                <input type="radio" name="quest_10" value="correta">c)Raízes distintas<br>
+                <input type="radio" name="quest_10" value="errada">d)Raízes complexas<br> <br>
+
+                <p id="resp_correta_10" class="verde"></p>
+                <p id="resp_errada_10" class="vermelho"></p> <br> <br>
+
+                <a href="#" onclick="funcao_resposta ()" class="button-exercicio">ENVIAR</a> <br> <br> <br>
+
+                <p class="acertos" id="quantos_acertos"></p> <br> <br>
+
+            </form>
+        </div>
+
+    </aside>
+
+    <main class="main-exercicios">
+        <h1 class="primeiro-titulo">Exercícios de revisão</h1> <br> <br>
+
+        <div class="exercicios-div">
+            <form>
+
+                <h3>1) Qual é o valor do discriminante (Δ) de uma equação de segundo grau do tipo ax² + bx + c = 0?</h3>
+                <br>
+
+                <input type="radio" name="quest_1" value="correta"> a) Δ = b² - 4ac<br>
+                <input type="radio" name="quest_1" value="errada"> b) Δ = 2ab - c²<br>
+                <input type="radio" name="quest_1" value="errada"> c) Δ = a² - 4bc<br>
+                <input type="radio" name="quest_1" value="errada"> d) Δ = b² - 2ac<br> <br>
+
+                <p id="resp_correta_1" class="verde"></p>
+                <p id="resp_errada_1" class="vermelho"></p><br>
+
+                <h3>2) Qual é a fórmula para encontrar as raízes de uma equação de segundo grau?</h3><br>
+
+                <input type="radio" name="quest_2" value="errada"> a) x = (-b ± √Δ) / (a - b)<br>
+                <input type="radio" name="quest_2" value="errada"> b) x = (-b ± √Δ) / (2c)<br>
+                <input type="radio" name="quest_2" value="errada"> c) x = (-b ± √Δ) / (a + c)<br>
+                <input type="radio" name="quest_2" value="correta"> d) x = (-b ± √Δ) / (2a)<br> <br>
+
+                <p id="resp_correta_2" class="verde"></p>
+                <p id="resp_errada_2" class="vermelho"></p><br> <br>
+
+                <h3>3) Se o discriminante (Δ) for igual a zero, quantas raízes reais a equação possui?</h3><br>
+
+                <input type="radio" name="quest_3" value="errada"> a) Infinitas raízes reais<br>
+                <input type="radio" name="quest_3" value="errada"> b) 0 raízes reais<br>
+                <input type="radio" name="quest_3" value="errada"> c) 2 raízes reais<br>
+                <input type="radio" name="quest_3" value="correta"> d) 1 raiz real<br> <br>
+
+                <p id="resp_correta_3" class="verde"></p>
+                <p id="resp_errada_3" class="vermelho"></p><br> <br>
+
+                <h3>4) Se o discriminante (Δ) for menor que zero, quantas raízes reais a equação possui ?</h3> <br>
+
+                <input type="radio" name="quest_4" value="errada">a) Infinitas raízes reais<br>
+                <input type="radio" name="quest_4" value="errada">b)1 raiz real<br>
+                <input type="radio" name="quest_4" value="correta">c) 0 raízes reais<br>
+                <input type="radio" name="quest_4" value="errada">d)raízes reais<br> <br>
+
+                <p id="resp_correta_4" class="verde"></p>
+                <p id="resp_errada_4" class="vermelho"></p><br> <br>
+
+                <h3>5) Se o discriminante (Δ) for maior que zero, quantas raízes reais a equação possui ?</h3> <br>
+
+                <input type="radio" name="quest_5" value="errada">a)0 raízes reais<br>
+                <input type="radio" name="quest_5" value="correta">b)2 raízes reais<br>
+                <input type="radio" name="quest_5" value="errada">c)Infinitas raízes reais<br>
+                <input type="radio" name="quest_5" value="errada">d)1 raiz real<br> <br>
+
+                <p id="resp_correta_5" class="verde"></p>
+                <p id="resp_errada_5" class="vermelho"></p><br> <br>
+
+                <h3>6) Qual é o termo responsável pela inclinação da curva de uma equação de segundo grau ?</h3> <br>
+
+                <input type="radio" name="quest_6" value="correta">a)Coeficiente a<br>
+                <input type="radio" name="quest_6" value="errada">b)Coeficiente b<br>
+                <input type="radio" name="quest_6" value="errada">c)Coeficiente c<br>
+                <input type="radio" name="quest_6" value="errada">d)Coeficiente d<br> <br>
+
+                <p id="resp_correta_6" class="verde"></p>
+                <p id="resp_errada_6" class="vermelho"></p><br> <br>
+
+                <h3>7) Se o coeficiente a for igual a zero, a equação ainda é considerada uma equação de segundo grau ?
+                </h3> <br>
+
+                <input type="radio" name="quest_7" value="errada">a)Não há coeficiente a<br>
+                <input type="radio" name="quest_7" value="errada">b)Talvez<br>
+                <input type="radio" name="quest_7" value="errada">c)Sim<br>
+                <input type="radio" name="quest_7" value="correta">d)Não<br> <br>
+
+                <p id="resp_correta_7" class="verde"></p>
+                <p id="resp_errada_7" class="vermelho"></p><br> <br>
+
+                <h3> 8) Qual é o número máximo de raízes reais que uma equação de segundo grau pode ter?</h3> <br>
+
+                <input type="radio" name="quest_8" value="errada">a)1 raiz real<br>
+                <input type="radio" name="quest_8" value="errada">b)Infinitas raízes reais<br>
+                <input type="radio" name="quest_8" value="correta">c)2 raízes reais<br>
+                <input type="radio" name="quest_8" value="errada">d)0 raízes reais<br> <br>
+
+                <p id="resp_correta_8" class="verde"></p>
+                <p id="resp_errada_8" class="vermelho"></p><br> <br>
+
+                <h3>9) Qual é o nome dado às raízes iguais em uma equação de segundo grau?</h3> <br>
+
+                <input type="radio" name="quest_9" value="errada">a)Raízes imaginárias<br>
+                <input type="radio" name="quest_9" value="correta">b)Raízes coincidentes ou raiz dupla<br>
+                <input type="radio" name="quest_9" value="errada">c)Raízes complexas<br>
+                <input type="radio" name="quest_9" value="errada">d)Raízes distintas<br> <br>
+
+                <p id="resp_correta_9" class="verde"></p>
+                <p id="resp_errada_9" class="vermelho"></p><br> <br>
+
+                <h3>10) Qual é o nome dado às raízes diferentes em uma equação de segundo grau?</h3> <br>
+
+                <input type="radio" name="quest_10" value="errada">a)Raízes coincidentes ou raiz dupla<br>
+                <input type="radio" name="quest_10" value="errada">b)Raízes imaginárias<br>
+                <input type="radio" name="quest_10" value="correta">c)Raízes distintas<br>
+                <input type="radio" name="quest_10" value="errada">d)Raízes complexas<br> <br>
+
+                <p id="resp_correta_10" class="verde"></p>
+                <p id="resp_errada_10" class="vermelho"></p> <br> <br>
+
+                <a href="#" onclick="funcao_resposta ()" class="button-exercicio">ENVIAR</a> <br> <br> <br>
+
+                <p class="acertos" id="quantos_acertos"></p> <br> <br>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes-sociais">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <ul class="link">
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">História</a></li>
+        </ul>
+        <div class="line"></div>
+        <p class="creditos">&#169
+            2023 Todos os direitos reservados</p>
+    </footer>
+
+    <!--Aqui tem o arquivo Javascript-->
+    <script src="script.js"></script>
+</body>
+
+</html>
